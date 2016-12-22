@@ -58,11 +58,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="home.php">HMSI UKDW Control Panel</a>
+          <a class="navbar-brand" href="index.php">HMSI UKDW Control Panel</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="home.php">Beranda</a></li>
+            <li><a href="index.php">Beranda</a></li>
             <li><a href="kegiatan.php">Kegiatan</a></li>
             <li><a href="visimisi?visimisi_id=1.php">Visi Misi</a></li>
             <li><a href="struktur.php">Struktur Organisasi</a></li>

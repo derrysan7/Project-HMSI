@@ -3,7 +3,7 @@
 ?>
 <?php $page=5; include_once 'header2.php'; ?>
 <script src='https://www.google.com/recaptcha/api.js'></script>
-<link rel="stylesheet" href="homeberita.css" type="text/css"/>
+<link rel="stylesheet" href="css/homeberita.css" type="text/css"/>
 <?php
 // $errName = "";
 // $errEmail = "";
@@ -17,7 +17,7 @@ if (isset($_POST["submit"])) {
 	$subject = $_POST['subject'];
 	$human = intval($_POST['human']);
 	$from = '[HMSI] Contact Us';
-	$to = 'cobahmsi@gmail.com';
+	$to = 'hmsi@si.ukdw.ac.id';
 
 
 	$body ="From: $name\n E-Mail: $email\n Message:\n $message";
@@ -52,7 +52,7 @@ if (isset($_POST["submit"])) {
 
           //exit;
         }
-        $response=json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6Ldf9wkUAAAAAKsB8-WZ7bpmyvnXvRRmssyxpMRE&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
+        $response=json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LfMdQ8UAAAAAGdfLYryTxyoAQ5AbaC5wdo3rrCK&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
         if($response['success'] == false)
         {
           $errBot= 'Please verify that you are not a BOT ';
@@ -71,7 +71,7 @@ if (isset($_POST["submit"])) {
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<h1 class="page-header text-center">Kontak Kami</h1>
+				<h1 class="page-header text-center">Contact Us</h1>
 				<form class="form-horizontal" role="form" method="post" action="kontak">
 					<div class="form-group">
 						<label for="name" class="col-sm-2 control-label">Name</label>
@@ -105,7 +105,7 @@ if (isset($_POST["submit"])) {
           <div class="form-group">
             <div class="col-sm-2"></div>
             <div class="col-sm-10">
-            <div class="g-recaptcha" data-sitekey="6Ldf9wkUAAAAAM-l8fOCKpetq9zryabcT3cp1S_i">
+            <div class="g-recaptcha" data-sitekey="6LfMdQ8UAAAAAA4tU0TrMFNdaXDQPkSw3qLo74yj">
 
             </div>
 

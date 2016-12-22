@@ -153,20 +153,20 @@ class USER
 	{						
 		require_once('mailer/class.phpmailer.php');
 		$mail = new PHPMailer();
-		$mail->IsSMTP(); 
-		$mail->SMTPDebug  = 0;
-		$mail->SMTPAuth   = true;
-		$mail->SMTPSecure = "ssl";
-		$mail->Host       = "smtp.gmail.com";
-		$mail->Port       = 465; 
-		$mail->AddAddress($email);
-		$mail->Username="cobahmsi@gmail.com";
-		$mail->Password="rpl1uyee";
-		$mail->SetFrom('cobahmsi@gmail.com','Admin HMSI UKDW');
-		$mail->AddReplyTo("cobahmsi@gmail.com","Admin HSMI UKDW");
-		$mail->Subject = $subject;
-		$mail->MsgHTML($message);
-		$mail->Send();
+    $mail->IsSMTP(); 
+    $mail->SMTPDebug  = 0;
+    $mail->SMTPAuth   = true;
+    $mail->SMTPSecure = "ssl";
+    $mail->Host       = "smtp.gmail.com";
+    $mail->Port       = 465; 
+    $mail->AddAddress($email);
+    $mail->Username="hmsi@si.ukdw.ac.id";
+    $mail->Password="2016Uyee";
+    $mail->SetFrom('hmsi@si.ukdw.ac.id','Admin HSMI UKDW');
+    $mail->AddReplyTo("hmsi@si.ukdw.ac.id","Admin HSMI UKDW");
+    $mail->Subject = $subject;
+    $mail->MsgHTML($message);
+    $mail->Send();
 	}
 }
 ?>

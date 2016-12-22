@@ -72,13 +72,10 @@
     </script>
 
     <script type="text/javascript">
-      $(document).ready(function() {
-        $('.carousel').carousel({interval: 4000});
-      });
       $(document).ready(function($){
       var nav = $('#mainNav');
           $(window).scroll(function () {
-              if ($(this).scrollTop() > 620) {
+              if ($(this).scrollTop() > 258) {
                   nav.addClass("f-nav");
               } else {
                   nav.removeClass("f-nav");
@@ -110,7 +107,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar">
 
         <div class="w3-container">
-          <a href="home.php">
+          <a href="index.php">
             <img src="imagenav/logoHMSI.png" class="img-responsive img-hmsi" alt="logoHMSI"  >
             <div style="color:black;font-weight:bold">
               <h1>Himpunan Mahasiswa Sistem Informasi</h1>
@@ -138,7 +135,7 @@
         <!--HOME-->
         <div class="navbar-header col-md-2">
           <ul class="nav navbar-nav">
-            <li class="<?php if ($page == '1'){ echo 'active'; } ?>"><a href="home.php">BERANDA</a></li>
+            <li class="<?php if ($page == '1'){ echo 'active'; } ?>"><a href="index.php">BERANDA</a></li>
         </div>
         
         <!--KEGIATAN-->
@@ -147,7 +144,7 @@
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">KEGIATAN<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="kegiatan.php">ARTIKEL</a></li>
-                <li><a href="https://drive.google.com/drive/u/0/folders/0B4Mb83qLhTn5cTBiaHVqZ25iRUU" target="_blank">GALERI</a></li>
+                <li><a href="https://drive.google.com/drive/folders/0B4by36dVVfYWRkxYVF9CZnRSUDQ" target="_blank">GALERI</a></li>
               </ul>
             </li>
         </ul>

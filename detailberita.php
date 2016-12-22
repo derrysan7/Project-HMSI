@@ -16,7 +16,7 @@ if(isset($_GET['detail_id']))
 $tanggalbaru = date_create($tanggaldib);
 
 ?>
-<link rel="stylesheet" href="homeberita.css" type="text/css"/>
+<link rel="stylesheet" href="css/homeberita.css" type="text/css"/>
 
 <div class="clearfix"></div><br />
 

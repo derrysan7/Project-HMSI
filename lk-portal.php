@@ -5,7 +5,7 @@ $login = new USER();
 
 if($login->is_loggedin()!="")
 {
-	$login->redirect('home.php');
+	$login->redirect('index.php');
 }
 
 if(isset($_POST['btn-login']))
@@ -16,7 +16,7 @@ if(isset($_POST['btn-login']))
 		
 	if($login->doLogin($uname,$umail,$upass))
 	{
-		$login->redirect('home.php');
+		$login->redirect('index.php');
 	}
 	else
 	{
@@ -84,7 +84,7 @@ if(isset($_POST['btn-login']))
       	<br />
         <br/>
 
-            <label><a href="home.php">Back to Home</a></label>
+            <label><a href="index.php">Back to Home</a></label>
       </form>
 
     </div>

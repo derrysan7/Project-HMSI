@@ -175,9 +175,8 @@ if(isset($msg))
             
 
             <div class="col-xs-8">
-                <label>Nama Penulis</label>
                 <br>
-                <input type='text' name='txt_namapen' class='form-control' value="<?php echo $namapen ?>" readonly>
+                <input type='hidden' name='txt_namapen' class='form-control' value="<?php echo $namapen ?>" readonly>
             </div>
             <br>
             <div class="col-xs-8">

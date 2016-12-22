@@ -3,7 +3,7 @@
 ?>
 
 <?php $page=1; include_once 'header2.php'; ?>
-<link rel="stylesheet" href="homeberita.css" type="text/css"/>
+<link rel="stylesheet" href="css/homeberita.css" type="text/css"/>
 
     <div class="clearfix"></div>
     	

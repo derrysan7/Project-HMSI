@@ -71,7 +71,7 @@ if(isset($_GET['edit_id']))
 
 ?>
 <?php include_once 'header.php'; ?>
-<link rel="stylesheet" href="styleberita.css" type="text/css">
+<link rel="stylesheet" href="css/styleberita.css" type="text/css">
 <link href="bootstrap/css/navbar-fixed-side.css" rel="stylesheet" />
 
 <div class="clearfix"></div>

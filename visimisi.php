@@ -14,7 +14,7 @@ if(isset($_GET['visimisi_id']))
 }
 
 ?>
-<link rel="stylesheet" href="homeberita.css" type="text/css"/>
+<link rel="stylesheet" href="css/homeberita.css" type="text/css"/>
 
 <div class="clearfix"></div><br />
 

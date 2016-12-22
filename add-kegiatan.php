@@ -157,7 +157,7 @@ else if(isset($_GET['failure']))
         </div>
 
         <div class="col-xs-8">
-            <label>Gambar (JPEG, JPG, PNG, GIF)</label>          
+            <label>Gambar (JPEG, JPG, PNG, GIF) *Optional</label>          
             <input class="input-group" type="file" name="user_image" accept="image/*" />
         </div>
 
@@ -172,15 +172,13 @@ else if(isset($_GET['failure']))
         </div>
         
         <div class="col-xs-8">
-            <label>Author ID</label>
             <br>
-            <input type='text' name='txt_userid' class='form-control' value='<?php echo $userRow['userId'] ?>' readonly>
+            <input type='hidden' name='txt_userid' class='form-control' value='<?php echo $userRow['userId'] ?>' readonly>
         </div>
 
         <div class="col-xs-8">
-            <label>Nama Penulis</label>
             <br>
-            <input type='text' name='txt_namapen' class='form-control' value='<?php echo $userRow['fullname'] ?>' readonly>
+            <input type='hidden' name='txt_namapen' class='form-control' value='<?php echo $userRow['fullname'] ?>' readonly>
         </div>
         <br>
 

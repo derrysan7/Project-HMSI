@@ -3,7 +3,7 @@
 ?>
 
 <?php $page=2; include_once 'header2.php'; ?>
-<link rel="stylesheet" href="homeberita.css" type="text/css"/>
+<link rel="stylesheet" href="css/homeberita.css" type="text/css"/>
 
     <div class="clearfix"></div>
     	
@@ -11,20 +11,12 @@
 <div class="container-fluid">
 	
     <div class="container">
-    
-    <div class="col-md-offset-2 col-md-8 col-md-offset-2" style="padding-bottom:30px;">
+    <div class=" col-md-12" style="padding-bottom:30px;">
     <h1 align="center" style="margin:50px 0px;">Kegiatan</h1>
-    <hr>
-      <div class="calendercustom">
-            <?php 
-                $querycal = "SELECT name,startdate,enddate,starttime,endtime,color,url FROM kegiatan";
-                $crud->dataview_calender($querycal);
-            ?>
-          <div class="monthly" id="mycalendar"></div>
-      </div>
+    <hr >
     </div>
+    <div class="col-md-8">
 
-    <div class="col-md-offset-2 col-md-8 col-md-offset-2">
     	<?php
           $query = "SELECT * FROM kegiatan ORDER BY tanggaldib DESC";
           $records_per_page=5;
@@ -36,6 +28,16 @@
     	<div class="pagination-wrap">
             <?php $crud->paginglink($query,$records_per_page); ?>
         </div>
+    </div>
+    <div class="col-md-4" style="padding-bottom:30px;">
+    
+      <div class="calendercustom">
+            <?php 
+                $querycal = "SELECT name,startdate,enddate,starttime,endtime,color,url FROM kegiatan";
+                $crud->dataview_calender($querycal);
+            ?>
+          <div class="monthly" id="mycalendar"></div>
+      </div>
     </div>
 
     

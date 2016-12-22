@@ -1,10 +1,10 @@
 <?php
 class Database
 {   
-    private $host = "localhost";
-    private $db_name = "dbtest";
-    private $username = "adminhmsi";
-    private $password = "12345";
+    private $host = "vhost.ti.ukdw.ac.id";
+    private $db_name = "hmsi";
+    private $username = "hmsi";
+    private $password = "JVhOHrdKkKdV9r98";
     public $conn;
      
     public function dbConnection()

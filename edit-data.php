@@ -124,7 +124,7 @@ if(isset($_POST['btn-resend']))
           Welcome to HMSI<br/>
           To complete your registration  please , just click the following link<br/>
           <br /><br />
-          <a href='http://localhost/hmsigit/verify.php?id=$autoid2&code=$code2'>Click HERE to Activate</a>
+          <a href='https://hmsi.fti.ukdw.ac.id/verify.php?id=$autoid2&code=$code2'>Click HERE to Activate</a>
           <br /><br />
           Thanks,";
           

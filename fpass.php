@@ -5,7 +5,7 @@ $user = new USER();
 
 if($user->is_loggedin()!="")
 {
-	$user->redirect('home.php');
+	$user->redirect('index.php');
 }
 
 if(isset($_POST['btn-submit']))
@@ -30,7 +30,7 @@ if(isset($_POST['btn-submit']))
 				   <br /><br />
 				   Click Following Link To Reset Your Password 
 				   <br /><br />
-				   <a href='http://localhost/hmsigit/resetpass.php?id=$id&code=$code'>Click HERE to reset your password</a>
+				   <a href='https://hmsi.fti.ukdw.ac.id/resetpass.php?id=$id&code=$code'>Click HERE to reset your password</a>
 				   <br /><br />
 				   Thank you
 				   ";
@@ -46,10 +46,11 @@ if(isset($_POST['btn-submit']))
 	}
 	else
 	{
-		$msg = "<div class='alert alert-danger'>
+		$msg = "<div class='alert alert-success'>
 					<button class='close' data-dismiss='alert'>&times;</button>
-					<strong>Sorry!</strong>  Email not found. 
-			    </div>";
+					We've sent an email to $email.
+                    Please click on the password reset link in the email to generate new password. 
+			  	</div>";
 	}
 }
 ?>

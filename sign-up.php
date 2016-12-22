@@ -5,7 +5,7 @@ $user = new USER();
 
 if($user->is_loggedin()!="")
 {
-	$user->redirect('home.php');
+	$user->redirect('index.php');
 }
 
 if(isset($_POST['btn-signup']))
@@ -122,7 +122,7 @@ if(isset($_POST['btn-signup']))
             <br />
             <label>have an account ! <a href="index.php">Sign In</a></label>
             <br>
-            <label><a href="home.php">Back to Home</a></label>
+            <label><a href="index.php">Back to Home</a></label>
         </form>
        </div>
 </div>

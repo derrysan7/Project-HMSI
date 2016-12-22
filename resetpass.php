@@ -43,6 +43,10 @@ if(isset($_GET['id']) && isset($_GET['code']))
                         $password = password_hash($upass, PASSWORD_DEFAULT);
                         $stmt = $user->runQuery("UPDATE users SET userPass=:upass WHERE userId=:uid");
                         $stmt->execute(array(":upass"=>$password,":uid"=>$rows['userId']));
+
+                        $code2 = bin2hex(openssl_random_pseudo_bytes(16));
+                        $stmt = $user->runQuery("UPDATE users SET tokenCode=:token2 WHERE tokenCode=:token");
+                        $stmt->execute(array(":token2"=>$code2,"token"=>$code));
                         
                         $msg = "<div class='alert alert-success'>
                                 <button class='close' data-dismiss='alert'>&times;</button>

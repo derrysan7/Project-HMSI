@@ -25,7 +25,11 @@ if(isset($_GET['id']) && isset($_GET['code']))
 			$stmt = $user->runQuery("UPDATE users SET userStatus=:status WHERE userID=:uID");
 			$stmt->bindparam(":status",$statusY);
 			$stmt->bindparam(":uID",$id);
-			$stmt->execute();	
+			$stmt->execute();
+
+    		$code2 = bin2hex(openssl_random_pseudo_bytes(16));
+    		$stmt = $user->runQuery("UPDATE users SET tokenCode=:token2 WHERE tokenCode=:token");
+    		$stmt->execute(array(":token2"=>$code2,"token"=>$code));	
 			
 			$msg = "
 		           <div class='alert alert-success' style='margin-top:20px;'>

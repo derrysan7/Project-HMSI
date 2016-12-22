@@ -1,9 +1,9 @@
 <?php
 
-$DB_host = "localhost";
-$DB_user = "adminhmsi";
-$DB_pass = "12345";
-$DB_name = "dbtest";
+$DB_host = "vhost.ti.ukdw.ac.id";
+$DB_user = "hmsi";
+$DB_pass = "JVhOHrdKkKdV9r98";
+$DB_name = "hmsi";
 
 
 try
