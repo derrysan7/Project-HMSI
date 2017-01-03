@@ -32,6 +32,7 @@
     <title>HMSI UKDW</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HMSI UKDW Himpunan Mahasiswa Sistem Informasi Universitas Kristen Duta Wacana">
     <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <link href="css/font-face.css" rel="stylesheet" type="text/css">
@@ -111,7 +112,7 @@
             <img src="imagenav/logoHMSI.png" class="img-responsive img-hmsi" alt="logoHMSI"  >
             <div style="color:black;font-weight:bold">
               <h1>Himpunan Mahasiswa Sistem Informasi</h1>
-              <h4>Universitas Kristen Duta Wacana</h4>
+              <h1 style="font-size: 18px;">Universitas Kristen Duta Wacana</h1>
             </div>
           </a>
 

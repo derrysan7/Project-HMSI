@@ -1,0 +1,20 @@
+{"monthly":[
+    {
+        "name": "Videografi",
+        "startdate": "2016-12-20",
+        "enddate": "2016-12-22",
+        "starttime": "16:00",
+        "endtime": "18:00",
+        "color": "#ff5b60",
+        "url": "detailkegiatan?detail_id=14"
+    },
+    {
+        "name": "Jalan Santai IT Fest 2016",
+        "startdate": "2016-12-26",
+        "enddate": "2016-12-27",
+        "starttime": "13:00",
+        "endtime": "16:00",
+        "color": "#0080ff",
+        "url": "detailkegiatan?detail_id=15"
+    }
+]}
