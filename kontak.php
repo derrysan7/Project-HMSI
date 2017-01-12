@@ -71,31 +71,31 @@ if (isset($_POST["submit"])) {
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
-				<h1 class="page-header text-center">Contact Us</h1>
+				<h1 class="page-header text-center">Kontak Kami</h1>
 				<form class="form-horizontal" role="form" method="post" action="kontak">
 					<div class="form-group">
-						<label for="name" class="col-sm-2 control-label">Name</label>
+						<label for="name" class="col-sm-2 control-label">Nama</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Nama Lengkap" value="<?php echo htmlspecialchars($_POST['name']); ?>">
 							<?php echo "<p class='text-danger'>$errName</p>";?>
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="email" class="col-sm-2 control-label">Email</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+							<input type="email" class="form-control" id="email" name="email" placeholder="contoh@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
 							<?php echo "<p class='text-danger'>$errEmail</p>";?>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="subject" class="col-sm-2 control-label">Subject</label>
+						<label for="subject" class="col-sm-2 control-label">Subyek</label>
 						<div class="col-sm-10">
-							<input type="subject" class="form-control" id="subject" name="subject" placeholder="Input Your Subject" value="<?php echo htmlspecialchars($_POST['subject']); ?>">
+							<input type="subject" class="form-control" id="subject" name="subject" placeholder="Masukkan Subyek Pesan" value="<?php echo htmlspecialchars($_POST['subject']); ?>">
 							<?php echo "<p class='text-danger'>$errSubject</p>";?>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="message" class="col-sm-2 control-label">Message</label>
+						<label for="message" class="col-sm-2 control-label">Pesan</label>
 						<div class="col-sm-10">
 							<textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
 							<?php echo "<p class='text-danger'>$errMessage</p>";?>
@@ -116,7 +116,7 @@ if (isset($_POST["submit"])) {
 
           <div class="form-group">
           	<div class="col-sm-10 col-sm-offset-2">
-          		<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary" style="margin-top:19px;">
+          		<input id="submit" name="submit" type="submit" value="Kirim" class="btn btn-primary" style="margin-top:19px;">
           	</div>
           </div>
           <div class="form-group">
