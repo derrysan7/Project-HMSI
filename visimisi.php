@@ -7,10 +7,22 @@ include_once 'class.crud.view.php';
 
 $page=4; include_once 'header2.php';
 
-if(isset($_GET['visimisi_id']))
+if(isset($_GET['visimisi_id']) == "")
 {
- $id = $_GET['visimisi_id'];
- extract($crud->getID_visimisi($id)); 
+    exit("Page not Found");
+}
+elseif(empty($_GET['visimisi_id'])) 
+{ 
+  exit("Page not Found");
+}
+elseif(isset($_GET['visimisi_id']))
+{
+    $id = $_GET['visimisi_id'];
+    extract($crud->getID_visimisi($id)); 
+    if ($deskripsi === NULL)
+    {
+        exit("Page not Found");
+    } 
 }
 
 ?>

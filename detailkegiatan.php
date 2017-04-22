@@ -7,11 +7,25 @@ include_once 'class.crud.view.php';
 
 $page=2; include_once 'header2.php';
 
-if(isset($_GET['detail_id']))
+
+if(isset($_GET['detail_id']) == "")
 {
- $id = $_GET['detail_id'];
- extract($crud->getID_kegiatan($id)); 
+    exit("Page not Found");
 }
+elseif(empty($_GET['detail_id'])) 
+{ 
+  exit("Page not Found");
+}
+elseif(isset($_GET['detail_id']))
+{
+    $id = $_GET['detail_id'];
+    extract($crud->getID_kegiatan($id)); 
+    if ($judul === NULL)
+    {
+        exit("Page not Found");
+    } 
+}
+
 
 $tanggalbaru = date_create($tanggaldib);
 
