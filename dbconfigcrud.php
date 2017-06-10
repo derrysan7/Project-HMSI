@@ -1,10 +1,10 @@
 <?php
 
 $DB_host = "localhost";
-$DB_user = "hmsi";
-$DB_pass = "JVhOHrdKkKdV9r98";
-$DB_name = "hmsi";
-$DB_port = "2222";
+$DB_user = "root";
+$DB_pass = "";
+$DB_name = "hmsi2";
+$DB_port = "";
 
 
 try

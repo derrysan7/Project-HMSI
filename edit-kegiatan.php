@@ -125,7 +125,7 @@ if(isset($msg))
   
     <form method="post" enctype="multipart/form-data">
 
-            <div class="col-xs-8">
+            <div class="col-md-8">
               <label>Nama Kegiatan di Kalender</label>
               <input type='text' name='txt_name' class='form-control' value="<?php echo $name?>" maxlength="30" required>
             </div>
@@ -152,18 +152,18 @@ if(isset($msg))
               </div>
             </div>
 
-            <div class="col-xs-8">
+            <div class="col-md-8">
               <label>Select label color </label>
               <input class="input-group" type="color" name="label_color" value="<?php echo $color?>"/>
             </div>
 
-            <div class="col-xs-8">
+            <div class="col-md-8">
                 <label>Gambar (JPEG, JPG, PNG, GIF)</label>
                 <p><img src="user_images_kegiatan/<?php echo $gambar; ?>" height="150" width="150" /></p>          
                 <input class="input-group" type="file" name="user_image" accept="image/*" />
             </div>
  
-            <div class="col-xs-8">
+            <div class="col-md-8">
                 <label>Judul Kegiatan</label>          
                 <input type='text' name='txt_judul' class='form-control' value="<?php echo $judul ?>" maxlength="80" required>
             </div>
@@ -174,12 +174,12 @@ if(isset($msg))
             </div>
             
 
-            <div class="col-xs-8">
+            <div class="col-md-8">
                 <br>
                 <input type='hidden' name='txt_namapen' class='form-control' value="<?php echo $namapen ?>" readonly>
             </div>
             <br>
-            <div class="col-xs-8">
+            <div class="col-md-8">
                 <button type="submit" class="btn btn-primary" name="btn-update">
                    <span class="glyphicon glyphicon-edit"></span>  Update this Record
                 </button>

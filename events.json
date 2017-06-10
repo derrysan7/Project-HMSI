@@ -1,20 +1,38 @@
 {"monthly":[
     {
-        "name": "Videografi",
-        "startdate": "2016-12-20",
-        "enddate": "2016-12-22",
-        "starttime": "16:00",
-        "endtime": "18:00",
-        "color": "#ff5b60",
-        "url": "detailkegiatan?detail_id=14"
+        "name": "SI Creative Day 2016",
+        "startdate": "2016-03-02",
+        "enddate": "2016-03-03",
+        "starttime": "08:00",
+        "endtime": "17:00",
+        "color": "#0080ff",
+        "url": "detailkegiatan?detail_id=1"
     },
     {
-        "name": "Jalan Santai IT Fest 2016",
-        "startdate": "2016-12-26",
-        "enddate": "2016-12-27",
-        "starttime": "13:00",
-        "endtime": "16:00",
-        "color": "#0080ff",
-        "url": "detailkegiatan?detail_id=15"
+        "name": "SI Night 2016",
+        "startdate": "2016-09-24",
+        "enddate": "2016-09-25",
+        "starttime": "08:00",
+        "endtime": "22:00",
+        "color": "#00ff80",
+        "url": "detailkegiatan?detail_id=2"
+    },
+    {
+        "name": "Videografi",
+        "startdate": "2016-11-19",
+        "enddate": "2016-11-19",
+        "starttime": "15:00",
+        "endtime": "17:00",
+        "color": "#ff4f4f",
+        "url": "detailkegiatan?detail_id=3"
+    },
+    {
+        "name": "Munas IMSII",
+        "startdate": "2017-05-19",
+        "enddate": "2017-05-20",
+        "starttime": "08:00",
+        "endtime": "16:30",
+        "color": "#00ffff",
+        "url": "detailkegiatan?detail_id=4"
     }
 ]}

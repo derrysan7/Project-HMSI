@@ -2,10 +2,10 @@
 class Database
 {   
     private $host = "localhost";
-    private $db_name = "hmsi";
-    private $username = "hmsi";
-    private $password = "JVhOHrdKkKdV9r98";
-    private $db_port = "2222";
+    private $db_name = "hmsi2";
+    private $username = "root";
+    private $password = "";
+    private $db_port = "";
     public $conn;
      
     public function dbConnection()

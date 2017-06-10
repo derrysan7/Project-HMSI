@@ -124,7 +124,7 @@ else if(isset($_GET['failure']))
     ?>
   
     <form method="post" enctype="multipart/form-data">
-        <div class="col-xs-8">
+        <div class="col-md-8">
           <label>Nama Kegiatan di Kalender</label>
           <input type='text' name='txt_name' class='form-control' maxlength="30" required>
         </div>
@@ -151,17 +151,17 @@ else if(isset($_GET['failure']))
           </div>
         </div>
 
-        <div class="col-xs-8">
+        <div class="col-md-8">
           <label>Select label color </label>
           <input class="input-group" type="color" name="label_color" value="#ff0000" />
         </div>
 
-        <div class="col-xs-8">
+        <div class="col-md-8">
             <label>Gambar (JPEG, JPG, PNG, GIF) *Optional</label>          
             <input class="input-group" type="file" name="user_image" accept="image/*" />
         </div>
 
-        <div class="col-xs-8">
+        <div class="col-md-8">
             <label>Judul Kegiatan</label>          
             <input type='text' name='txt_judul' class='form-control' maxlength="80" required>
         </div>
@@ -171,18 +171,18 @@ else if(isset($_GET['failure']))
             <textarea class="form-control" rows="40"  wrap="hard" cols="80" name="txt_deskripsi" id="deskripsi" name="txt_deskripsi" required></textarea>
         </div>
         
-        <div class="col-xs-8">
+        <div class="col-md-8">
             <br>
             <input type='hidden' name='txt_userid' class='form-control' value='<?php echo $userRow['userId'] ?>' readonly>
         </div>
 
-        <div class="col-xs-8">
+        <div class="col-md-8">
             <br>
             <input type='hidden' name='txt_namapen' class='form-control' value='<?php echo $userRow['fullname'] ?>' readonly>
         </div>
         <br>
 
-        <div class="col-xs-8">
+        <div class="col-md-8">
             <button type="submit" class="btn btn-primary" name="btn-save">
                 <span class="glyphicon glyphicon-plus"></span> Create New Record
             </button>  
