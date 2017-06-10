@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 10, 2017 at 07:07 AM
+-- Generation Time: Jun 10, 2017 at 07:21 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -231,7 +231,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`userId`, `userName`, `userEmail`, `userPass`, `fullname`, `kodePermission`, `userStatus`, `tokenCode`) VALUES
-(62, 'devaccountderry7', 'derrysantoso@gmail.com', '$2y$10$ZD8Hzudv5V/sGGO/dWkebeEDOP8paiS2QPPTJ4uu8XkSN5wwaWkEW', 'Derry Santoso', 1, 'Y', 'b41910db912b1bd78215a65393657382'),
+(62, 'devaccountderry7', 'derrysantoso@gmail.com', '$2y$10$ZD8Hzudv5V/sGGO/dWkebeEDOP8paiS2QPPTJ4uu8XkSN5wwaWkEW', 'Derry Santoso', 1, 'Y', '954ccdf5c0211eed0bcc0e723c49175d'),
 (63, 'edwin', 'kurniawan.edwin@me.com', '$2y$10$l1qVy47dQVWz5hno4UNiC.lfvc6YgEtaKNlE7R/Spy/TboN1xYuW2', 'Kurniawan Edwin', 1, 'Y', '649b04f971dfb058664d0392e197d596'),
 (64, 'devaccountderryauthor', 'derrysantoso3@gmail.com', '$2y$10$2xzh9bHlYgB.63m3NFF3KuJleiQXzmWByp1p12fV/Mvqr/DU4cRCq', 'Derry Santoso', 2, 'Y', 'bd4c1057c4599326280da098eaeb58fc'),
 (65, 'Edwin2', 'kurniawan.edwin@si.ukdw.ac.id', '$2y$10$Rphj/lLm6zKsCSGg.7Q5DenP1bDlEDRmIjiMu3wVVLASERRd/lnGy', 'Kurniawan Edwin', 2, 'Y', 'edbfe228fefef08b093f90f68ace83e7'),
@@ -242,7 +242,9 @@ INSERT INTO `users` (`userId`, `userName`, `userEmail`, `userPass`, `fullname`, 
 (70, 'pedro_raymon', 'pedro.raymon@si.ukdw.ac.id', '$2y$10$2fxbJL1HvwnVDLR/Ogentu2sFNquN.n09z9yxo6ZLJqfcPah6xaWy', 'Pedro Raymon Lapebesi', 2, 'Y', '7d370e2cd5d4242d703e42133978c054'),
 (71, 'dinda_yol', 'dinda.yolanda@si.ukdw.ac.id', '$2y$10$FKbC5FtIXZ2hpsRltci9H.PpjI9.rzMRMfecrszaf3WgxhAx4ccYi', 'Dinda Yolanda Br Ginting', 2, 'Y', '7c142ff38f94104b91ad0abea5494c25'),
 (72, 'brendanatasha2', 'brnjdb@gmail.com', '$2y$10$SaEWbv6uAgDsH.JfksF96eNpXnn3B5xElAn1Le2HtFiiS0g5peV4C', 'Brenda Natasha Wijaya Pinem', 2, 'Y', '763236b7e92bab0fa420c0f18daa1879'),
-(73, 'kevinthimoty20', 'thimotykevin20@gmail.com', '$2y$10$RC8SYtgvTiC685CIs1wGoeFYERfShmTssY7VQNUh2X9YCIRuz6tpu', 'Kevin', 2, 'Y', 'eee172574088ed339dee8f78d6a8ec3c');
+(73, 'kevinthimoty20', 'thimotykevin20@gmail.com', '$2y$10$RC8SYtgvTiC685CIs1wGoeFYERfShmTssY7VQNUh2X9YCIRuz6tpu', 'Kevin', 2, 'Y', 'eee172574088ed339dee8f78d6a8ec3c'),
+(74, 'admincoba', 'adminhmsicoba@gmail.com', '$2y$10$fixzSv/VnuAYXCvIxigJIuW04/YZ3lK3U6aVIVBEBilT.G7U.RRbS', 'admin coba', 1, 'Y', 'f5a044e3469723e7aec9f0330cb2655e'),
+(75, 'authorcoba', 'hmsiauthorcoba@gmail.com', '$2y$10$MVAUx.zUhrOAswsDq7vXWOSawVbfHi1TgydG5zJF1VJvRVn6EAVqu', 'author coba', 2, 'Y', '0e7fad632329038bafa57d520584b9a0');
 
 -- --------------------------------------------------------
 
@@ -374,7 +376,7 @@ ALTER TABLE `struktur`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=74;
+  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
